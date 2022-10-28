@@ -689,7 +689,7 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
 
         return (
             <p className='login-body-message-subtitle'>
-                {formatMessage({id: 'login.subtitle', defaultMessage: 'Collaborate with your team in real-time'})}
+                {/* {formatMessage({id: 'login.subtitle', defaultMessage: 'Collaborate with your team in real-time'})} */}
             </p>
         );
     };
@@ -717,6 +717,7 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
         return (
             <>
                 <div
+    
                     className={classNames(
                         'login-body-message',
                         {
@@ -734,14 +735,15 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
                             onError={handleBrandImageError}
                         />
                     ) : (
-                        <h1 className='login-body-message-title'>
+                        <h1 dir='rtl' style={{textAlign:"center"}} className='login-body-message-title'>
                             {formatMessage({id: 'login.title', defaultMessage: 'Log in to your account'})}
                         </h1>
                     )}
                     {getMessageSubtitle()}
                     {!enableCustomBrand && (
                         <div className='login-body-message-svg'>
-                            <WomanWithChatsSVG width={270}/>
+                            {/* icon_bitcofe */}
+                            {/* <WomanWithChatsSVG width={270}/> */}
                         </div>
                     )}
                 </div>

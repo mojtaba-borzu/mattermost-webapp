@@ -148,7 +148,7 @@ export default class PasswordSettings extends AdminSettings {
     renderSettings = () => {
         return (
             <SettingsGroup>
-                <div>
+                <div dir='rtl'>
                     <TextSetting
                         id='passwordMinimumLength'
                         label={

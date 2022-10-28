@@ -20,13 +20,16 @@ class App extends React.PureComponent {
     render() {
         return (
             <Provider store={store}>
+                <div dir='rtl'>
                 <CRTPostsChannelResetWatcher/>
                 <Router history={browserHistory}>
                     <Route
                         path='/'
                         component={Root}
                     />
+
                 </Router>
+                </div>
             </Provider>);
     }
 }

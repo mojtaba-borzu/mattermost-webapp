@@ -997,8 +997,8 @@ export const DraggingStateTypes = {
 };
 
 export const AboutLinks = {
-    TERMS_OF_SERVICE: 'https://mattermost.com/terms-of-use/',
-    PRIVACY_POLICY: 'https://mattermost.com/privacy-policy/',
+    TERMS_OF_SERVICE: '',
+    PRIVACY_POLICY: '',
 };
 
 export const CloudLinks = {
