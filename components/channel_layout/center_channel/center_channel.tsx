@@ -89,7 +89,7 @@ export default class CenterChannel extends React.PureComponent<Props, State> {
                         </div>
                     </div>
                 )}
-                <div className='row main'>
+                <div style={{direction:"rtl" ,height:"500px"}} className='row main'>
                     <Switch>
                         <Route
                             path={`${url}/pl/:postid`}

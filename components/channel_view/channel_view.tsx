@@ -149,6 +149,7 @@ export default class ChannelView extends React.PureComponent<Props, State> {
         } else {
             createPost = (
                 <div
+                style={{direction:"ltr"}}
                     className='post-create__container AdvancedTextEditor__ctr'
                     id='post-create'
                 >

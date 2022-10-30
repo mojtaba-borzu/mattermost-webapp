@@ -43,7 +43,7 @@ const GlobalHeader = (): JSX.Element | null => {
     }
 
     return (
-        <GlobalHeaderContainer id='global-header'>
+        <GlobalHeaderContainer dir='ltr' id='global-header'>
             <LeftControls/>
             <CenterControls productId={currentProductID}/>
             <RightControls productId={currentProductID}/>

@@ -277,18 +277,18 @@ const FormattingBar = (props: FormattingBarProps): JSX.Element => {
                 const insertSeparator = mode === 'heading' || mode === 'ol';
                 return (
                     <React.Fragment key={mode}>
-                        <FormattingIcon
+                        {/* <FormattingIcon
                             mode={mode}
                             className='control'
                             onClick={makeFormattingHandler(mode)}
                             disabled={disableControls}
-                        />
+                        /> */}
                         {insertSeparator && <Separator show={wideMode === 'wide'}/>}
                     </React.Fragment>
                 );
             })}
 
-            {hasHiddenControls && showFormattingControls && (
+            {/* {hasHiddenControls && showFormattingControls && (
                 <>
                     <IconContainer
                         id={'HiddenControlsButton' + location}
@@ -304,13 +304,13 @@ const FormattingBar = (props: FormattingBarProps): JSX.Element => {
                     </IconContainer>
                     <Separator show={true}/>
                 </>
-            )}
+            )} */}
             <CSSTransition
                 timeout={250}
                 classNames='scale'
                 in={showHiddenControls}
             >
-                <HiddenControlsContainer
+                {/* <HiddenControlsContainer
                     ref={floating}
                     style={hiddenControlsContainerStyles}
                 >
@@ -325,7 +325,7 @@ const FormattingBar = (props: FormattingBarProps): JSX.Element => {
                             />
                         );
                     })}
-                </HiddenControlsContainer>
+                </HiddenControlsContainer> */}
             </CSSTransition>
             {extraControls}
         </FormattingBarContainer>

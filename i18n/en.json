@@ -2883,10 +2883,10 @@
   "get_app.dontHaveTheDesktopApp": "برنامه دسکتاپ ندارید؟",
   "get_app.dontHaveTheMobileApp": "اپلیکیشن موبایل را ندارید؟",
   "get_app.downloadTheAppNow": "هم اکنون برنامه را دانلود کنید.",
-  "get_app.ifNothingPrompts": "می‌توانید {siteName} را در برنامه دسک‌تاپ مشاهده کنید یا در مرورگر وب خود ادامه دهید.",
+  "get_app.ifNothingPrompts": "می‌توانید Bitcofe را در برنامه دسک‌تاپ مشاهده کنید یا در مرورگر وب خود ادامه دهید.",
   "get_app.ifNothingPromptsMobile": "می‌توانید {siteName} را در برنامه تلفن همراه مشاهده کنید یا در مرورگر وب خود ادامه دهید.",
   "get_app.launching": "دوست دارید این را کجا ببینید؟",
-  "get_app.openLinkInBrowser": "یا، [این پیوند را در مرورگر خود باز کنید.](!{link})",
+  "get_app.openLinkInBrowser": "میتوانید برنامه را در مرورگر خود باز نمایید",
   "get_app.openingLink": "باز کردن لینک در bitcofe...",
   "get_app.openingLinkWhiteLabel": "در حال باز کردن پیوند در {appName}...",
   "get_app.redirectedInMoments": "چند لحظه دیگر هدایت می شوید.",
@@ -4279,7 +4279,7 @@
   "warn_metric_ack_modal.number_of_posts.header.title": "بهبود کارایی",
   "warn_metric_ack_modal.number_of_users.header.title": "مقیاس گذاری با bitcofe",
   "warn_metric_ack_modal.subtext": "با کلیک بر روی تأیید، اطلاعات خود را با bitcofe Inc. {link} به اشتراک می‌گذارید.",
-  "web.footer.about": "در باره",
+  "web.footer.about": " درباره",
   "web.footer.help": "کمک",
   "web.footer.privacy": "حریم خصوصی",
   "web.footer.terms": "مقررات",
@@ -4293,5 +4293,6 @@
   "widgets.users_emails_input.valid_email": "افزودن **{email}**",
   "widget.passwordInput.createPassword":"پسورد",
   "widget.passwordInput.password":"پسورد",
-  "yourcomputer": "کامپیوتر شما"
+  "yourcomputer": "کامپیوتر شما",
+  "site_name":"bitcofe"
 }

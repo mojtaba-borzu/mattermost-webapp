@@ -53,7 +53,7 @@ const PasswordResetForm = ({location, siteName, actions}: Props) => {
 
     return (
         <div className='col-sm-12'>
-            <div className='signup-team__container'>
+            <div style={{fontFamily:"IRANSansX"}} className='signup-team__container'>
                 <FormattedMessage
                     id='password_form.title'
                     tagName='h1'

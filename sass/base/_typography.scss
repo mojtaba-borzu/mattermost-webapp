@@ -2,10 +2,12 @@
 
 b,
 strong {
+    font-family: IRANSansX !important;
     font-weight: 600;
 }
 
 a {
+    font-family: IRANSansX !important;
     color: $primary-color;
     cursor: pointer;
     text-decoration: none;
@@ -30,16 +32,17 @@ a {
 body {
     @include font-smoothing;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: IRANSansX;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Metropolis, sans-serif;
+    font-family: IRANSansX;
 }
 
 h1 {
+    font-family: IRANSansX !important;
     font-weight: 600;
 }
 
@@ -49,16 +52,19 @@ h1 {
 
 label {
     &.has-error {
+        font-family: IRANSansX !important;
         color: $red;
         font-weight: normal;
     }
 }
 
 .small {
+    font-family: IRANSansX !important;
     font-size: 12px;
 }
 
 .light {
+    font-family: IRANSansX !important;
     opacity: 0.56;
 }
 
@@ -81,12 +87,14 @@ label {
 
 ul,
 ol {
+    font-family: IRANSansX !important;
     padding-left: 22px;
     margin-top: 3px;
     margin-bottom: 0.11em;
 }
 
 .fa {
+    font-family: IRANSansX !important;
     &.fa-1x {
         font-size: 1.6rem;
     }
@@ -214,14 +222,14 @@ ol {
 }
 
 .app__body.font--open_sans {
-    font-family: 'Open Sans', sans-serif;
+    font-family: IRANSansX !important;
 }
 
 .app__body {
     h1,
     h2,
-    h3 {
-        font-family: Metropolis, sans-serif;
+    h3,h4,h6,span {
+        font-family: IRANSansX !important;
     }
 }
 

@@ -17,7 +17,7 @@ const CenterControlsContainer = styled.div`
     flex-grow: 1;
 
     > * + * {
-        margin-left: 8px;
+        margin-right: 8px;
     }
 `;
 
@@ -27,6 +27,7 @@ export type Props = {
 
 const CenterControls = ({productId = null}: Props): JSX.Element => {
     return (
+       
         <CenterControlsContainer>
             {productId === null ? (
                 <>
@@ -41,6 +42,7 @@ const CenterControls = ({productId = null}: Props): JSX.Element => {
                 />
             )}
         </CenterControlsContainer>
+        
     );
 };
 

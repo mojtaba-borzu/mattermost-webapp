@@ -93,7 +93,7 @@ export default class MFAController extends React.PureComponent<Props & RouteComp
                     <div>
                         {backButton}
                         <div className='col-sm-12'>
-                            <div className='signup-team__container'>
+                            <div style={{fontFamily:"IRANSansX"}} className='signup-team__container'>
                                 <h3>
                                     <FormattedMessage
                                         id='mfa.setupTitle'
