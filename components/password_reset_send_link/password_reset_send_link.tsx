@@ -104,7 +104,7 @@ export default class PasswordResetSendLink extends React.PureComponent<Props, St
             <div>
                 <BackButton/>
                 <div className='col-sm-12'>
-                    <div className='signup-team__container'>
+                    <div style={{fontFamily:"IRANSansX"}} className='signup-team__container'>
                         <FormattedMessage
                             id='password_send.title'
                             tagName='h1'

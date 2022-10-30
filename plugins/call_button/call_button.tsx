@@ -77,7 +77,7 @@ export default function CallButton({pluginCallComponents, currentChannel, channe
                     item.action?.(currentChannel, channelMember);
                 }}
             >
-                {item.dropdownButton}
+                {/* {item.dropdownButton} */}
             </li>
         );
     });

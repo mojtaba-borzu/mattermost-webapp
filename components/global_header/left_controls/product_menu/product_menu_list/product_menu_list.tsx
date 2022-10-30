@@ -237,7 +237,7 @@ const ProductMenuList = (props: Props): JSX.Element | null => {
                         />
                     }
                 />
-                <Menu.ItemToggleModalRedux
+                {/* <Menu.ItemToggleModalRedux
                     id='about'
                     modalId={ModalIdentifiers.ABOUT}
                     dialogType={AboutBuildModal}
@@ -248,7 +248,7 @@ const ProductMenuList = (props: Props): JSX.Element | null => {
                             glyph={'information-outline'}
                         />
                     }
-                />
+                /> */}
             </div>
         </Menu.Group>
     );

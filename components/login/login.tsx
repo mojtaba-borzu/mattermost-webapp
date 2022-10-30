@@ -210,15 +210,7 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
     }, []);
 
     const configureTitle = useCallback(() => {
-        document.title = sessionExpired ? (
-            formatMessage(
-                {
-                    id: 'login.session_expired.title',
-                    defaultMessage: '* {siteName} - Session Expired',
-                },
-                {siteName},
-            )
-        ) : siteName;
+        document.title = "Bitcofe"
     }, [sessionExpired, siteName]);
 
     const showSessionExpiredNotificationIfNeeded = useCallback(() => {

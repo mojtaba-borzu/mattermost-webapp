@@ -117,12 +117,12 @@ class AdminNavbarDropdown extends React.PureComponent<Props> {
                         text={formatMessage({id: 'admin.nav.troubleshootingForum', defaultMessage: 'Troubleshooting Forum'})}
                     />
                     {commercialSupport}
-                    <Menu.ItemToggleModalRedux
+                    {/* <Menu.ItemToggleModalRedux
                         onClick={() => trackEvent('admin', 'click_administrators_about')}
                         modalId={ModalIdentifiers.ABOUT}
                         dialogType={AboutBuildModal}
                         text={formatMessage({id: 'navbar_dropdown.about', defaultMessage: 'About {appTitle}'}, {appTitle: siteName || 'Mattermost'})}
-                    />
+                    /> */}
                 </Menu.Group>
                 <Menu.Group>
                     <Menu.ItemAction

@@ -286,7 +286,7 @@ const OnBoardingTaskList = (): JSX.Element | null => {
 
     return (
         <>
-            <CompletedAnimation completed={showAnimation}/>
+            {/* <CompletedAnimation completed={showAnimation}/>
             <Button
                 onClick={toggleTaskList}
                 ref={trigger}
@@ -362,7 +362,7 @@ const OnBoardingTaskList = (): JSX.Element | null => {
                             </>
                         )}
                 </TaskItems>
-            </TaskListPopover>
+            </TaskListPopover> */}
         </>
     );
 };

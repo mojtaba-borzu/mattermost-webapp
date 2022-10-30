@@ -235,13 +235,11 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
 
         if (this.state.redirectPage) {
             return (
-                <div className='get-app__download-link'>
+                <div style={{fontFamily:"IRANSansX"}}  className='get-app__download-link'>
                     <FormattedMarkdownMessage
                         id='get_app.openLinkInBrowser'
                         defaultMessage='Or, [open this link in your browser.](!{link})'
-                        values={{
-                            link: this.state.location,
-                        }}
+                     
                     />
                 </div>
             );
@@ -271,7 +269,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
         let openingLink = (
             <FormattedMessage
                 id='get_app.openingLink'
-                defaultMessage='Opening link in Mattermost...'
+                defaultMessage='Opening link in Bitcofe...'
             />
         );
         if (this.props.enableCustomBrand) {
@@ -280,7 +278,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                     id='get_app.openingLinkWhiteLabel'
                     defaultMessage='Opening link in {appName}...'
                     values={{
-                        appName: this.props.siteName || 'Mattermost',
+                        appName: this.props.siteName || 'Bitcofe',
                     }}
                 />
             );
@@ -295,16 +293,10 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                             id='get_app.redirectedInMoments'
                             defaultMessage='You will be redirected in a few moments.'
                         />
-                        <br/>
-                        {this.renderDownloadLinkText()}
-                        {'\u00A0'}
-                        <br className='mobile-only'/>
-                        <a href={downloadLink}>
-                            <FormattedMessage
-                                id='get_app.downloadTheAppNow'
-                                defaultMessage='Download the app now.'
-                            />
-                        </a>
+                     
+                 
+                   
+                      
                     </div>
                 </h1>
             );
@@ -313,9 +305,10 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
         let viewApp = (
             <FormattedMessage
                 id='get_app.ifNothingPrompts'
-                defaultMessage='You can view {siteName} in the desktop app or continue in your web browser.'
+                tagName='h3'
+                defaultMessage='You can view Bitcofe in the desktop app or continue in your web browser.'
                 values={{
-                    siteName: this.props.enableCustomBrand ? '' : ' Mattermost',
+                    siteName: this.props.enableCustomBrand ? '' : ' Bitcofe',
                 }}
             />
         );
@@ -323,9 +316,10 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
             viewApp = (
                 <FormattedMessage
                     id='get_app.ifNothingPromptsMobile'
-                    defaultMessage='You can view {siteName} in the mobile app or continue in your web browser.'
+                    tagName='h3'
+                    defaultMessage='You can view Bitcofe in the mobile app or continue in your web browser.'
                     values={{
-                        siteName: this.props.enableCustomBrand ? '' : ' Mattermost',
+                        siteName: this.props.enableCustomBrand ? '' : ' Bitcofe',
                     }}
                 />
             );
@@ -359,9 +353,9 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
             <div className='get-app__dialog-body'>
                 {this.renderDialogHeader()}
                 <div className='get-app__buttons'>
-                    <div className='get-app__status'>
+                    {/* <div className='get-app__status'>
                         {this.renderGoNativeAppMessage()}
-                    </div>
+                    </div> */}
                     <div className='get-app__status'>
                         <a
                             href={this.state.location}
@@ -381,7 +375,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                         </a>
                     </div>
                 </div>
-                <div className='get-app__preference'>
+                <div style={{display:"flex",alignItems:"center" ,gap:"10px"}} className='get-app__preference'>
                     <button
                         className={`get-app__checkbox ${this.state.rememberChecked ? 'checked' : ''}`}
                         onClick={this.handleChecked}
@@ -390,10 +384,11 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                     </button>
                     <FormattedMessage
                         id='get_app.rememberMyPreference'
+                        tagName='h6'
                         defaultMessage='Remember my preference'
                     />
                 </div>
-                {this.renderDownloadLinkSection()}
+                {/* {this.renderDownloadLinkSection()} */}
             </div>
         );
     }
@@ -401,10 +396,11 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
     renderHeader = () => {
         let header = (
             <div className='get-app__header'>
-                <img
+                {/* icon_bitcofe */}
+                {/* <img
                     src={MattermostLogoSvg}
                     className='get-app__logo'
-                />
+                /> */}
             </div>
         );
         if (this.props.enableCustomBrand && this.props.brandImageUrl) {

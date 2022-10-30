@@ -70,12 +70,12 @@ const ProductMenuItem = ({icon, destination, text, active, onClick, tourTip, id}
         <MenuItemTextContainer>
             {text}
         </MenuItemTextContainer>
-        {active && (
+        {/* {active && (
             <StyledIcon
                 size={16}
                 glyph='check'
             />
-        )}
+        )} */}
         {tourTip || null}
     </MenuItem>
 );

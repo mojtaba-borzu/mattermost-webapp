@@ -69,5 +69,5 @@ export default function FormattedMarkdownMessage({
         renderer: new CustomRenderer(disableLinks),
     });
 
-    return (<span dangerouslySetInnerHTML={{__html: markedUpMessage}}/>);
+    return (<span  dangerouslySetInnerHTML={{__html: markedUpMessage}}/>);
 }

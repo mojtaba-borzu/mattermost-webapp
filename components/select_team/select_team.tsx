@@ -370,6 +370,7 @@ export default class SelectTeam extends React.PureComponent<Props, State> {
                 {headerButton}
                 <div className='col-sm-12'>
                     <div
+                    style={{fontFamily:"IRANSansX"}}
                         className={'select-team__container signup-team__container'}
                     >
                         <img

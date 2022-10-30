@@ -13,7 +13,7 @@ const ProductBrandingContainer = styled.div`
     align-items: center;
 
     > * + * {
-        margin-left: 8px;
+        margin-right: 8px;
     }
 `;
 
@@ -24,7 +24,7 @@ const ProductBranding = (): JSX.Element => {
 
     return (
         <ProductBrandingContainer tabIndex={0}>
-            <Icon
+            {/* <Icon
                 size={20}
                 glyph={currentProduct && typeof currentProduct.switcherIcon === 'string' ? currentProduct.switcherIcon : 'product-channels'}
             />
@@ -34,7 +34,7 @@ const ProductBranding = (): JSX.Element => {
                 margin='none'
             >
                 {currentProduct ? currentProduct.switcherText : 'Channels'}
-            </Heading>
+            </Heading> */}
         </ProductBrandingContainer>
     );
 };

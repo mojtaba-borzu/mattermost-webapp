@@ -138,7 +138,7 @@ class AdminSidebar extends React.PureComponent<Props, State> {
             currentSiteName = ' - ' + this.props.siteName;
         }
 
-        document.title = localizeMessage('sidebar_right_menu.console', 'System Console') + currentSiteName;
+        document.title = "Bitcofe"
     }
 
     visibleSections = () => {

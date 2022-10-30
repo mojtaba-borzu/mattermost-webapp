@@ -312,7 +312,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
 
     useEffect(() => {
         if (SiteName) {
-            document.title = SiteName;
+            document.title = "Bitcofe"
         }
     }, [SiteName]);
 

@@ -49,7 +49,7 @@ export default class ClaimController extends React.PureComponent<Props> {
             <div>
                 <BackButton/>
                 <div className='col-sm-12'>
-                    <div className='signup-team__container'>
+                    <div style={{fontFamily:"IRANSansX"}} className='signup-team__container'>
                         <img
                             alt={'signup logo'}
                             className='signup-team-logo'

@@ -272,7 +272,7 @@ export default class SettingItemMax extends React.PureComponent {
                 className={`section-max form-horizontal ${this.props.containerStyle}`}
             >
                 {title}
-                <div className={widthClass}>
+                {/* <div className={widthClass}>
                     <div
                         tabIndex='-1'
                         ref={this.settingList}
@@ -294,7 +294,7 @@ export default class SettingItemMax extends React.PureComponent {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
         );
     }

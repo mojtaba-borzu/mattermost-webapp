@@ -223,6 +223,7 @@ export default class Sidebar extends React.PureComponent<Props, State> {
 
         return (
             <div
+            style={{direction:"ltr"}}
                 id='SidebarContainer'
                 className={classNames({
                     'move--right': this.props.isOpen && this.props.isMobileView,

@@ -133,15 +133,18 @@ export default class Menu extends React.PureComponent<Props> {
 
         return (
             <div
+            style={{paddingRight:"200px"}}
                 aria-label={ariaLabel}
                 className='a11y__popup Menu'
                 id={id}
                 role='menu'
             >
                 <ul
+                
                     id={listId}
                     ref={this.node}
-                    style={styles}
+                    style={{textAlign:"right"}}
+                    // style={styles}
                     className={classNames('Menu__content dropdown-menu', this.props.className)}
                     onClick={this.handleMenuClick}
                 >

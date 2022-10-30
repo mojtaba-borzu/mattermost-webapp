@@ -11,7 +11,7 @@ type Props = {
 
 export default class SiteNameAndDescription extends React.PureComponent<Props> {
     public static defaultProps: Partial<Props> = {
-        siteName: 'Mattermost',
+        siteName: 'Bitcofe',
     }
 
     public render(): JSX.Element {

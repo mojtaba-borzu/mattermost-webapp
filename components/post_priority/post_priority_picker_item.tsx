@@ -50,10 +50,10 @@ function Item({
             className='style--none'
             onClick={onClick}
         >
-            {text && <span className='MenuItem__primary-text'>{text}</span>}
+            {/* {text && <span className='MenuItem__primary-text'>{text}</span>}
             {isSelected && (
                 <StyledCheckIcon size={18}/>
-            )}
+            )} */}
         </ItemButton>
     );
 }
