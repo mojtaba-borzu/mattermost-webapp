@@ -364,11 +364,11 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
         }
 
         return (
-            <p className='signup-body-message-subtitle'>
-                {formatMessage({
+            <p dir='rtl' style={{width:"100%"}} className='signup-body-message-subtitle'>
+                {/* {formatMessage({
                     id: 'signup_user_completed.subtitle',
                     defaultMessage: 'Create your Mattermost account to start collaborating with your team',
-                })}
+                })} */}
             </p>
         );
     };
@@ -657,6 +657,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                             {enableSignUpWithEmail && (
                                 <div className='signup-body-card-form'>
                                     <Input
+                                    dir='rtl'
                                         ref={emailInput}
                                         name='email'
                                         className='signup-body-card-form-email-input'
@@ -699,6 +700,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                                         value={password}
                                         inputSize={SIZE.LARGE}
                                         onChange={handlePasswordInputOnChange}
+                                        
                                         disabled={isWaiting}
                                         createMode={true}
                                         info={passwordInfo as string}
@@ -723,18 +725,18 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                             )}
                             {enableExternalSignup && (
                                 <div className={classNames('signup-body-card-form-login-options', {column: !enableSignUpWithEmail})}>
-                                    {getExternalSignupOptions().map((option) => (
+                                    {/* {getExternalSignupOptions().map((option) => (
                                         <ExternalLoginButton
                                             key={option.id}
                                             direction={enableSignUpWithEmail ? undefined : 'column'}
                                             {...option}
                                         />
-                                    ))}
+                                    ))} */}
                                 </div>
                             )}
                             {enableSignUpWithEmail && !serverError && (
                                 <p className='signup-body-card-agreement'>
-                                    <FormattedMarkdownMessage
+                                    {/* <FormattedMarkdownMessage
                                         id='create_team.agreement'
                                         defaultMessage='By proceeding to create your account and use {siteName}, you agree to our [Terms of Use]({TermsOfServiceLink}) and [Privacy Policy]({PrivacyPolicyLink}). If you do not agree, you cannot use {siteName}.'
                                         values={{
@@ -742,7 +744,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                                             TermsOfServiceLink: `!${TermsOfServiceLink}`,
                                             PrivacyPolicyLink: `!${PrivacyPolicyLink}`,
                                         }}
-                                    />
+                                    /> */}
                                 </p>
                             )}
                         </div>

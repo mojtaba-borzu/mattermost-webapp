@@ -57,7 +57,7 @@ const Plugins = (props: Props) => {
                     <Title>
                         <FormattedMessage
                             id={'onboarding_wizard.plugins.title'}
-                            defaultMessage='Welcome to Mattermost!'
+                            defaultMessage='Welcome to bitcofe!'
                         />
                         <div className='subtitle'>
                             <CelebrateSVG/>
@@ -70,7 +70,7 @@ const Plugins = (props: Props) => {
                     <Description>
                         <FormattedMessage
                             id={'onboarding_wizard.plugins.description'}
-                            defaultMessage={'Mattermost is better when integrated with the tools your team uses for collaboration. Popular tools are below, select the ones your team uses and we\'ll add them to your workspace. Additional set up may be needed later.'}
+                            defaultMessage={'bitcofe is better when integrated with the tools your team uses for collaboration. Popular tools are below, select the ones your team uses and we\'ll add them to your workspace. Additional set up may be needed later.'}
                         />
                     </Description>
                     <PageBody>

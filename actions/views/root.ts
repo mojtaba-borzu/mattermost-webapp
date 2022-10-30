@@ -73,7 +73,7 @@ export function loadTranslations(locale: string, url: string) {
         });
 
         // Need to go to the server for languages other than English
-        if (locale !== 'en') {
+        if (locale !== 'fa') {
             try {
                 const serverTranslations = await Client4.getTranslations(url);
                 Object.assign(translations, serverTranslations);

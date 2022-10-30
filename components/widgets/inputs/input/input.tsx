@@ -128,6 +128,8 @@ const Input = React.forwardRef((
                     {inputPrefix}
                     {textPrefix && <span>{textPrefix}</span>}
                     <input
+                    dir='rtl'
+                    style={{direction:"rtl"}}
                         ref={ref}
                         id={`input_${name || ''}`}
                         className={classNames('Input form-control', inputSize, inputClassName, {Input__focus: showLegend})}
@@ -151,7 +153,7 @@ const Input = React.forwardRef((
                 {addon}
             </fieldset>
             {customInputLabel && (
-                <div className={`Input___customMessage Input___${customInputLabel.type}`}>
+                <div dir='rtl' style={{display:"flex" ,justifyContent:"flex-start",alignItems:"center",gap:"5px"}} className={`Input___customMessage Input___${customInputLabel.type}`}>
                     <i
                         className={classNames(`icon ${customInputLabel.type}`, {
                             'icon-alert-outline': customInputLabel.type === ItemStatus.WARNING,
@@ -160,7 +162,7 @@ const Input = React.forwardRef((
                             'icon-check': customInputLabel.type === ItemStatus.SUCCESS,
                         })}
                     />
-                    <span>{customInputLabel.value}</span>
+                    <span className=''>{customInputLabel.value}</span>
                 </div>
             )}
         </div>

@@ -26,6 +26,7 @@ const BackButton = ({url, className, onClick}: Props): JSX.Element => {
 
     return (
         <div
+        style={{display:"flex",justifyContent:"end",alignItems:"center",}}
             id='back_button'
             className={classNames('signup-header', className)}
         >
@@ -33,15 +34,16 @@ const BackButton = ({url, className, onClick}: Props): JSX.Element => {
                 onClick={onClick}
                 to={url}
             >
+                      <FormattedMessage
+                    id='web.header.back'
+                    defaultMessage='Back'
+                />
                 <span
                     id='back_button_icon'
                     className='fa fa-1x fa-angle-left'
                     title={formatMessage({id: 'generic_icons.back', defaultMessage: 'Back Icon'})}
                 />
-                <FormattedMessage
-                    id='web.header.back'
-                    defaultMessage='Back'
-                />
+          
             </Link>
         </div>
     );

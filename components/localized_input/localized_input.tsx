@@ -25,6 +25,7 @@ const LocalizedInput = React.forwardRef((props: Props, ref?: React.Ref<HTMLInput
 
     return (
         <input
+        style={{textAlign:"start"}}
             {...otherProps}
             ref={ref}
             placeholder={formatMessage({id, defaultMessage}, values)}

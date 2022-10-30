@@ -1,9 +1,11 @@
 .MultiInput {
     &.Input_container {
+        direction: rtl !important;
         margin-top: 20px;
     }
 
     .Input_wrapper {
+        direction: rtl !important;
         padding: 0;
         font-size: 14px;
         line-height: 20px;
@@ -28,6 +30,7 @@
     }
 
     input {
+        direction: rtl !important;
         padding-left: 8px !important;
     }
 }
@@ -81,6 +84,7 @@
     }
 
     & + div input {
+        direction: rtl !important;
         padding-left: 0 !important;
     }
 }
@@ -94,6 +98,7 @@
     }
 
     & + div input {
+        direction: rtl !important;
         padding-left: 0 !important;
     }
 }

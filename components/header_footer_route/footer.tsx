@@ -20,13 +20,13 @@ const Footer = () => {
                 key='footer-copyright'
                 className='footer-copyright'
             >
-                {`© ${new Date().getFullYear()} Mattermost Inc.`}
+                {`© ${new Date().getFullYear()} bitcofe Inc.`}
             </span>
             {AboutLink && (
                 <a
                     key='footer-link-about'
                     className='footer-link'
-                    href={AboutLink}
+                    href={`https://bitcofe.com`}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
@@ -37,7 +37,7 @@ const Footer = () => {
                 <a
                     key='footer-link-privacy'
                     className='footer-link'
-                    href={PrivacyPolicyLink}
+                    href={`https://bitcofe.com`}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
@@ -48,7 +48,7 @@ const Footer = () => {
                 <a
                     key='footer-link-terms'
                     className='footer-link'
-                    href={TermsOfServiceLink}
+                    href={`https://bitcofe.com`}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
@@ -59,7 +59,7 @@ const Footer = () => {
                 <a
                     key='footer-link-help'
                     className='footer-link'
-                    href={HelpLink}
+                    href={`https://bitcofe.com`}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
