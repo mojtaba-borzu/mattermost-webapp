@@ -19,7 +19,7 @@ export const SidebarCategoryHeaderStatic = React.forwardRef((props: StaticProps,
                 ref={ref}
                 className='SidebarChannelGroupHeader_groupButton'
             >
-                <div className='SidebarChannelGroupHeader_text'>
+                <div  className='SidebarChannelGroupHeader_text'>
                     {wrapEmojis(props.displayName)}
                 </div>
                 {props.children}

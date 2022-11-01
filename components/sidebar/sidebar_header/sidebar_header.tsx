@@ -79,6 +79,7 @@ const SidebarHeading = styled(Heading).attrs(() => ({
     }
 
     #SidebarContainer & {
+     
         font-family: IRANSansX;
     }
 `;
